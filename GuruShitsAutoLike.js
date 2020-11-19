@@ -37,6 +37,10 @@ async function main() {
       const boostBtns =  document.getElementsByClassName('boost-state-available');       
       console.log(voteBtns.length);
       
+      //close unneccessary windows
+	    $(".c-cards__close").click();
+	    $(".icon-close:not(.close)").click();
+     
       //vote for photos
       for (var btn of voteBtns){ 
                 
